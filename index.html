@@ -1,1 +1,221 @@
-hello World
+<!--julian starzef 01/25/2022-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>JULIAN STARZEF</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css" />
+
+    <style>
+        .lg-sub-html>p {
+            font-size: large;
+            text-align: center;
+        }
+    </style>
+
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h1 id="home"><span>julian starzef</span></h1>
+        </header>
+
+        <div id="navbar">
+
+            <a href="#home">home&nbsp;</a>
+            <a href="#about">about&nbsp;</a>
+            <a href="#contact">contact&nbsp;</a>
+
+        </div>
+
+        <div class="content">
+
+
+
+            <h2><span>recent works</span></h2>
+
+            <div id="lightgallery">
+                <a href="pink_flower.png" data-sub-html=".caption">
+                    <img src="pink_flower.png" alt="pink flower">
+                    <div class="caption">
+                        <p>
+                            pink rose
+                            <br>rendered using illustrator in 2021
+                        </p>
+                    </div>
+
+                </a>
+
+                <a href="tulips-01.png" data-sub-html=".caption">
+                    <img src="tulips-01.png" alt="three tulips">
+                    <div class="caption">
+                        <p>
+                            tulips
+                            <br>rendered using illustrator in 2021
+                        </p>
+                    </div>
+                </a>
+
+                <a href="islandmarble.png" data-sub-html=".caption">
+                    <img src="islandmarble.png" alt="island marble">
+                    <div class="caption">
+                        <p>
+                            island marble
+                            <br>rendered using illustrator in 2021
+                        </p>
+                    </div>
+                </a>
+
+                <a href="towertheater-01.png" data-sub-html=".caption">
+                    <img src="towertheater-01.png" alt="tower theatre">
+                    <div class="caption">
+                        <p>
+                            Tower Theatre, Sacramento, CA post card
+                            <br>rendered using illustrator in 2020
+                        </p>
+                    </div>
+                </a>
+
+                <a href="isometrichouse.png" data-sub-html=".caption">
+                    <img src="isometrichouse.png" alt="isometric beach house design">
+                    <div class="caption">
+                        <p>
+                            tropical isometric design
+                            <br>rendered using illustrator in 2020
+                        </p>
+                    </div>
+                </a>
+
+                <a href="untethered-03.png" data-sub-html=".caption">
+                    <img src="untethered-03.png" alt="Untethered by Evelyn Teasdale album art">
+                    <div class="caption">
+                        <p>
+                            Untethered by Evelyn Teasdale album art
+                            <br>rendered using illustrator in 2021
+                        </p>
+                    </div>
+                </a>
+
+                <a href="volvocutaway.jpg" data-sub-html=".caption">
+                    <img src="volvocutaway.jpg" alt="volvo cutaway">
+                    <div class="caption">
+                        <p>
+                            Volvo cutaway banner
+                            <br>rendered using illustrator in 2020
+                        </p>
+                    </div>
+                </a>
+
+                <a href="olympialogo.jpg" data-sub-html=".caption">
+                    <img src="olympialogo.jpg" alt="runs good logo">
+                    <div class="caption">
+                        <p>
+                            Runs Good logo
+                            <br>rendered using illustrator in 2020
+                        </p>
+                    </div>
+                </a>
+
+                <a href="toc.png" data-sub-html=".caption">
+                    <img src="toc.png" alt="table of contents">
+                    <div class="caption">
+                        <p>
+                            table of contents produced for Sac City Express
+                            <br>rendered using illustrator in 2020
+                        </p>
+                    </div>
+                </a>
+
+                <a href="wedinvblueunderlay.jpg" data-sub-html=".caption">
+                    <img src="wedinvblueunderlay.jpg" alt="wedding invitation 2019">
+                    <div class="caption">
+                        <p>
+                            Wedding invitation for my mother's ceremony
+                            <br>rendered using illustrator in 2019
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+
+            <h2 id="about"><span>about</span></h2>
+            <p>
+                Hi, my name is Julian. I’ve recently refreshed my skills through a myriad of accredited and non
+                accredited courses, and am available to work on graphic and web design based projects. Having worked in
+                a variety of settings and industries, I adapt quickly. Clear communication aligned with diligent
+                organization enables me to manage expectations with a results-driven orientation.
+                <br>
+                <br>
+                From concept ideation to development, I use a nuanced approach including both experimentation and
+                strategy to actualize a finished project.
+                Rather than following trends, good design should be shaped by a product’s function, while fine details
+                cultivate memorable experiences. My design practice aims to develop creative solutions without becoming
+                overly complicated.
+
+            </p>
+
+            <h2 id="contact"><span>contact</span></h2>
+            <p>
+                Feel free to reach me by email at julianstarzef@gmail.com.
+                Thank you for your interest!
+            </p>
+
+
+    </main>
+
+
+
+    <footer>
+        &copy; julian starzef 2022
+    </footer>
+
+
+    <!-- lightGallery -->
+    <script src="js/lightgallery.umd.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="js/plugins/relativeCaption/lg-relative-caption.umd.js"></script>
+    <script src="js/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+
+
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery'),
+
+
+            {
+                plugins: [lgRelativeCaption, lgThumbnail],
+                licenseKey: 'sorry',
+                speed: 500,
+                subHtmlSelectorRelative: true,
+                thumbnail: true,
+                getCaptionFromTitleOrAlt: true
+            }
+
+        );
+
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    </div>
+
+</body>
+
+
+</html>
